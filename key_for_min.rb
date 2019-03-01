@@ -3,10 +3,10 @@
 
 def key_for_min_value(name_hash)
 #If the method is called and passed an argument of an empty hash, it should return nil
-minv = nil
+minv = 0
 mink = nil
 name_hash.each do |key, value|
-  if minv == nil
+  if minv == 0
     minv = value
     mink = key
   elsif minv > value
@@ -15,4 +15,4 @@ name_hash.each do |key, value|
   end
 end
 mink
-end 
+end
